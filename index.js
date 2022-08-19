@@ -27,6 +27,6 @@ app.use('/parcela', require('./routes/parcela'));
 app.use('/usuarios', require('./routes/usuarios'));
 app.use('/servicios', require('./routes/servicios'));
 
-app.listen(4000, () => {
+app.listen(3200, () => {
     console.log('El servidor esta corriendo perfectamente')
 })
