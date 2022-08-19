@@ -4,7 +4,7 @@
   "description": "MEAN API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js"
+    "start": "ng run start"
   },
   "author": "Alan de la rosa",
   "license": "ISC",
