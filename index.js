@@ -1,7 +1,6 @@
 const express = require('express');
 const conectarDB = require('./config/db');
 const cors = require("cors");
-require('dotenv').config()
 
 // Creamos el servidor
 const app = express();
@@ -29,6 +28,6 @@ app.use('/parcela', require('./routes/parcela'));
 app.use('/usuarios', require('./routes/usuarios'));
 app.use('/servicios', require('./routes/servicios'));
 
-app.listen(PORT, () => {
+app.listen(4000, () => {
     console.log('El servidor esta corriendo perfectamente')
 })
