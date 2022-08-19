@@ -18,7 +18,6 @@ conectarDB();
 app.use(cors())
 
 app.use(express.json());
-const PORT = process.env.PORT
 
 /**
  * mongodb+srv://icoorganic:0NTKzI9rN2hWVl3M@cluster0.czlttyz.mongodb.net/?retryWrites=true&w=majority 
