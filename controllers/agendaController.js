@@ -5,8 +5,6 @@ exports.crearCita = async (req, res) => {
 
     try {
         let agenda;
-
-        // Creamos nuestro producto
         agenda = new Agenda(req.body);
 
         await agenda.save();
@@ -22,7 +20,7 @@ exports.obtenerCitaToId = async (req, res) => {
     console.log(id)
     try {
       
-      let agendas = await Agenda.find({solicitorTo: id, status: 'ACEPTADA'} ).populate('solicitorBy').populate('solicitorTo')
+      let agendas = await Agenda.find({solicitorTo: id, status: 'APROBADA'} ).populate('solicitorBy').populate('solicitorTo')
 
         if(!agendas) {
             res.status(404).json({ msg: 'No existe al cita' })
